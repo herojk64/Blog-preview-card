@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Figtree Italic";
+    src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Figtree Variable";
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Figtree ExtraBold";
+    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Figtree SemiBold";
+    src: url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --gray-950: hsl(0, 0%, 7%);
+    --gray-500: hsl(0, 0%, 42%);
+    --white: hsl(0, 0%, 100%);
+
+    --figtree-italic: "Figtree Italic";
+    --figtree-variable: "Figtree Variable";
+    --figtree-extrabold: "Figtree ExtraBold";
+    --figtree-semibold: "Figtree SemiBold";
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+html,body,h1,h2,h3,h4,h5,h6,p,div,span,article,aside,details,
+    summary, figure, figcaption, footer, header, hgroup, menu, nav, section,
+    blockquote, dd, dl, dt, fieldset, form, input, label, legend, meter, optgroup,
+    option, output, progress, select, table, tbody, td, tfoot, th, thead, tr, video {
+        margin: 0;
+    padding: 0;
+    }
+
+html, body {
+    min-height: 100svh;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--yellow); 
+}
+
+main {
+    width: 384px;
+    height:522px;
+    background-color: var(--white);
+    padding:24px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px var(--gray-950);
+}
+
+@media screen and (max-width:600px) {
+    main{
+        height: 501px;
+        width: 327px;
+    }
+}
+
+.illustration {
+    width: 100%;
+    height:200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.learning-btn{
+    height: 29px;
+    width: 82px;
+    background-color: var(--yellow);
+    border: 0;
+    border-radius: 4px;
+    padding: 4px 12px;
+    margin-bottom: 12px;
+    font-family: var(--figtree-extrabold);
+}
+
+article{
+    margin-bottom: 24px;
+}
+
+.article-publish{
+    font-family: var(--figtree-variable);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+article h1{
+    font-family: var(--figtree-extrabold);
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.article-description{
+    font-family: var(--figtree-variable);
+    color: var(--gray-500);
+    font-size: 16px;
+}
+
+.author-preview{
+    display: flex;
+    align-items: center;
+    font-family: var(--figtree-extrabold);
+}
+.author-preview img{
+    height: 32px;
+    width: 32px;
+    margin-right: 12px;
+}
